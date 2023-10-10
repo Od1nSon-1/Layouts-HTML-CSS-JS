@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 14px;
+	font-family: "Libre Franklin", sans-serif;
+	font-weight: 400;
+	color: #6C6C6C;
+}
+
+a {
+	text-decoration: none;
+	color: #6C6C6C;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+
+
+.container {
+	max-width: 1155px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 37px 0px;
+}
+
+.header__logo a {
+	font-size: 33px;
+	font-family: "Pacifico", sans-serif;
+	color: black;
+}
+
+nav {
+	margin-left: 500px;
+}
+
+nav a {
+	font-size: 12px;
+	font-weight: 400;
+	font-family: "Popins", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-right: 40px;
+	transition-duration: 1s;
+	transition-property: all;
+}
+
+nav a:hover {
+	color: red;
+	font-size: 14px;
+}
+
+nav a:last-child {
+	margin-right: 0px;
+}
+
+
+.header__cart {
+	position: relative;
+}
+
+
+.header__cart img:first-child {
+	position: absolute;
+	right: 70px;
+	bottom: -10px;
+}
+
+.header__cart img:nth-child(2) {
+	position: absolute;
+	right: 35px;
+
+}
