@@ -258,3 +258,35 @@ nav a:last-child {
 	width: 62%;
 	line-height: 36px;
 }
+
+
+
+
+
+.featured-product__inner__block{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.featured-product__inner__block__visual img:first-child{
+}
+
+.featured-product__inner__block:last-child {
+
+	flex-direction: row-reverse;
+}
+
+
+.featured-product__inner__block__visual{
+	width: 30%;
+	background-image: url(./image/feature-product-vase-rectungle.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50%;
+}
+
+.featured-product__inner__block__text{
+	width: 20%;
+}
+
