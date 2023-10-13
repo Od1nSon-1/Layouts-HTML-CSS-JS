@@ -430,3 +430,38 @@ nav a:last-child {
 }
 
 
+
+.new-collection {
+	background-image: url(./image/new-collection-image.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:120px 0px ;
+}
+
+
+.new-collection__inner h5{
+	font-weight: 400;
+	margin-bottom: 7px ;
+}
+
+.new-collection__inner h2{
+	font-size: 36px;
+	font-weight: 700;
+	color:black;
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 13px;
+}
+
+
+.new-collection__inner p {
+	width: 40%;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.new-collection__inner span{
+	color: #AC1313;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: underline;
+}
