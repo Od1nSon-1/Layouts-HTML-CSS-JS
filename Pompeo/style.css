@@ -161,7 +161,7 @@ nav a:last-child {
 	transform: rotate(-90deg);
 	position: absolute;
 	bottom: -360px;
-	left: -20px;
+	left: -24px;
 
 }
 
@@ -267,23 +267,24 @@ nav a:last-child {
 
 .line {
 	width: 100%;
-	border-top:1px solid #F5F5F5;
+	border-top: 1px solid #DBDBDB;
+	;
 }
 
-.featured-product{
+.featured-product {
 	position: relative;
 }
 
 
 .featured-product > p {
-	position:absolute;
+	position: absolute;
 	transform: rotate(-90deg);
-	top:490px ;
+	top: 490px;
 	right: -20px;
 }
 
-.featured-product__inner{
-	padding:80px 0px 50px 0px;
+.featured-product__inner {
+	padding: 80px 0px 50px 0px;
 }
 
 
@@ -357,3 +358,75 @@ nav a:last-child {
 	font-size: 14px;
 	font-weight: 700;
 }
+
+
+.store {
+	position: relative;
+}
+
+.store > p {
+	position: absolute;
+	transform: rotate(-90deg);
+	top:810px;
+	left:-54px;
+
+}
+
+.store__inner {
+	padding: 120px 0px;
+
+}
+
+.store__heading {
+	text-align: center;
+	margin-bottom: 63px;
+}
+
+
+.store__heading h5 {
+	margin-bottom: 17px;
+}
+
+.store__heading h2 {
+	color: black;
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.store__cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	row-gap: 21px;
+	column-gap: 5px;
+	margin-bottom: 60px;
+}
+
+.store__card__visual {
+	margin-bottom: 5px;
+}
+
+.store__card__cost {
+	width: 97.2%;
+	padding-top: 15px;
+}
+
+.store__card__cost a {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.store__card__cost p {
+	margin-bottom: 15px;
+	color: #000;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.store__inner button {
+	display: block;
+	margin: 0 auto;
+}
+
+
