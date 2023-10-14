@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
 	margin: 0px;
@@ -367,8 +368,8 @@ nav a:last-child {
 .store > p {
 	position: absolute;
 	transform: rotate(-90deg);
-	top:810px;
-	left:-54px;
+	top: 810px;
+	left: -54px;
 
 }
 
@@ -435,19 +436,19 @@ nav a:last-child {
 	background-image: url(./image/new-collection-image.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding:120px 0px ;
+	padding: 120px 0px;
 }
 
 
-.new-collection__inner h5{
+.new-collection__inner h5 {
 	font-weight: 400;
-	margin-bottom: 7px ;
+	margin-bottom: 7px;
 }
 
-.new-collection__inner h2{
+.new-collection__inner h2 {
 	font-size: 36px;
 	font-weight: 700;
-	color:black;
+	color: black;
 	font-family: "Poppins", sans-serif;
 	margin-bottom: 13px;
 }
@@ -459,9 +460,66 @@ nav a:last-child {
 	margin-bottom: 30px;
 }
 
-.new-collection__inner span{
+.new-collection__inner span {
 	color: #AC1313;
 	font-size: 16px;
 	font-weight: 700;
 	text-decoration: underline;
+}
+
+
+.contact {
+	padding: 122px 0px 162px 0px
+}
+
+.contact__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact__header img {
+	margin-bottom: 40px;
+}
+
+.contact__header h5 {
+	margin-bottom: 8px;
+	text-align: center;
+	position: relative;
+	right: 12px;
+	font-weight: 400;
+}
+
+
+
+.contact__text h2 {
+	margin-bottom: 63px;
+	color: #000;
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.contact__text span {
+	color: #AC1313;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 68px;
+	position: relative;
+	bottom: 10px;
+}
+
+
+.contact__info input:first-child {
+	padding: 13px 150px 12px 10px ;
+}
+
+.contact__info button{
+	background-color: black;
+	padding: 15px 45px ;
+	color:white;
+	text-align: center;
+	font-weight: 14px;
+	font-weight: 400;
+	font-family: 'Lato',sans-serif;
+	letter-spacing: 0.5px;
 }
