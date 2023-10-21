@@ -151,11 +151,73 @@ nav a:last-child {
 	padding: 19px 31px 21px 40px;
 	background: #AC1313;
 	text-transform: uppercase;
+	border: 5px solid transparent;
 	letter-spacing: 1px;
 	font-weight: 700;
 	font-size: 12px;
 	font-family: "Poppins", sans-serif;
+	position: relative;
+	width: 207px;
+	box-shadow: 5px 4px 10px orange;
+	transition: all 0.9s linear 0s;
+
 }
+
+.button__style:hover {
+	font-size: 13px;
+	width: 14rem;
+}
+
+
+
+/* .info__block button:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border: 8px solid transparent;
+	bottom: 0px;
+	left: 0px;
+	box-sizing: border-box;
+} */
+
+/* .info__block button:hover:before {
+	height: 58px;
+	width: 196px;
+	border: 8px solid rgba(0, 0, 0, 0.479);
+	border-bottom: none;
+	border-right: none;
+	transition: height 0.5s linear, width 0.5s linear 0.5s;
+}
+
+.info__block button:after {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border: 8px solid transparent;
+	top: 0px;
+	right: 0px;
+	box-sizing: border-box;
+}
+
+.info__block button:hover:after {
+	height: 58px;
+	width: 196px;
+	border: 8px solid rgba(0, 0, 0, 0.76);
+	border-left: none;
+	border-top: none;
+	transition: height 0.5s linear 1s, width 0.5s linear 1.5s;
+} */
+
+
+
+
+
+
+
+
+
 
 
 .categorie > p {
