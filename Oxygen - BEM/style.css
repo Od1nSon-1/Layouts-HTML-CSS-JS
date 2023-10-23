@@ -469,7 +469,7 @@ legend {
 }
 
 .video__content {
-	background-image: url(/image/video-img.png);
+	background-image: url(./image/video-img.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-width: 100%;
@@ -479,7 +479,7 @@ legend {
 
 .video__content::after {
 	content: "";
-	background-image: url(/image/video-img-play.svg);
+	background-image: url(./image/video-img-play.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -513,4 +513,27 @@ legend {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
+}
+
+
+.slider {
+	padding: 307px 0px 114px 0px;
+	background: #F6F8FA;
+
+}
+
+
+.slider__item-title {
+	color: #242121;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 52px;
+	margin-bottom: 32px;
+
+}
+
+.slider__item-decr {
+	margin-bottom: 197px;
 }
