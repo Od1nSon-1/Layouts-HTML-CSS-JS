@@ -165,6 +165,7 @@ svg * {
 	transition-property: fill, stroke;
 }
 
+
 /**
   Удаляем все анимации и переходы для людей,
   которые предпочитают их не использовать
@@ -173,10 +174,12 @@ svg * {
 	* {
 		animation-duration: 0.01ms !important;
 		animation-iteration-count: 1 !important;
-		transition-duration: 0.01ms !important;
+		transition-duration: 0.01ms;
 		scroll-behavior: auto !important;
 	}
 }
+
+
 
 
 /* Подготовка css переменных для удобства в сокращении кода  */
@@ -189,7 +192,7 @@ svg * {
 
 	/* можем записать border-radius - он содержиться в кнопках и полях ввода */
 	--border-radius: 30px;
-	--border: 1px solid var(var(--color-light));
+	--border: 1px solid var(--color-light);
 
 	--font-family-base: 'Heebo', sans-serif;
 	--font-family-accent: 'Yantramanav', sans-serif;
@@ -216,11 +219,29 @@ body {
 }
 
 
+a,
+input,
+textarea,
+button,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
+a {
+	color: var(--color-light);
+}
+
+/* Объявление наведения на все ссылки */
+a:hover {
+	color: var(--color-light-gray);
+}
+
 .container {
 	max-width: calc(var(--container-width) + var(--container-padding-x) *2);
 	margin-inline: auto;
 	padding-inline: var(--container-padding-x);
 }
+
 
 
 /* реализация заголовков  */
@@ -232,4 +253,147 @@ h5,
 h6 {
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+
+
+.button {
+	display: inline-flex;
+	height: 38px;
+	padding-inline: 26px;
+	align-items: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	line-height: 2;
+	font-weight: 700;
+	white-space: nowrap;
+	background-color: var(--color-light);
+	border: none;
+	border-radius: var(--border-radius);
+}
+
+.button:hover {
+	background-color: var(--color-light-gray);
+}
+
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 20px;
+	padding-inline: 32px;
+}
+
+.header-logo {
+	flex-shrink: 0;
+}
+
+.header-menu-list {
+	display: flex;
+	column-gap: 50px;
+	flex-wrap: wrap;
+}
+
+
+.header-menu-link {
+	/* Реализация большой области нажатия на ссылку */
+	display: inline-flex;
+	height: 90px;
+	column-gap: 7px;
+	align-items: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	/* padding-block:36px; */
+}
+
+
+.header-menu-link.is-current::after {
+	content: "";
+	width: 5px;
+	height: 5px;
+	background-color: currentColor;
+	border-radius: 50%;
+}
+
+.header-actions {
+	display: flex;
+	column-gap: 40px;
+}
+
+
+
+.header-burger-button {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 4px;
+	padding-left: 8px;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	color: var(--color-light);
+	border: var(--border);
+	border-radius: var(--border-radius);
+}
+
+.header-burger-button:hover {
+	color: var(--color-light-gray);
+	border-color: currentColor;
+}
+
+
+
+.header-burger-button-line {
+	width: 6px;
+	height: 1px;
+	background-color: currentColor;
+	box-shadow: 16px 0 0 currentColor;
+}
+
+
+
+@media(max-width:1024px) {
+	.header {
+		flex-wrap: wrap;
+		padding-top: 20px;
+		row-gap: 10px;
+		padding-inline: 15px;
+	}
+
+	.header-menu {
+		order: 1;
+		/* элемент начал занимать всю строку стал блочным */
+		flex-basis: 100%;
+	}
+
+	.header-menu-link {
+		height: 50px;
+	}
+}
+
+@media (max-width:767px) {
+	.button {
+		padding-inline: 18px;
+	}
+
+	.header {
+		padding-top: 10px;
+	}
+
+	.header-menu-list {
+		column-gap: 24px;
+	}
+
+	.header-menu-link {
+		height: 32px;
+	}
+
+	.header-actions {
+		column-gap: 15px;
+	}
 }
