@@ -253,3 +253,86 @@ svg * {
 	clip: rect(0 0 0 0) !important;
 	overflow: hidden !important;
 }
+
+
+.button {
+	display: inline-flex;
+	height: 44px;
+	align-items: center;
+	padding-inline: 24px;
+	font-size: 15px;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 20px;
+	min-height: var(--header-height);
+	padding-inline: 40px;
+	background-color: var(--color-green);
+}
+
+.header-logo {
+	flex-shrink: 0;
+}
+
+.header-menu-list {
+	display: flex;
+	column-gap: 24px;
+	flex-wrap: wrap;
+}
+
+.header-menu-link {
+	/* Реализация большой области нажатия на ссылку */
+	display: inline-flex;
+	height: var(--header-height);
+	column-gap: 7px;
+	align-items: center;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 1.2px;
+	color: var(--color-dark-white)
+		/* padding-block:36px; */
+}
+
+
+.header-actions {
+	display: flex;
+	column-gap: 32px;
+}
+
+.header-contacts {
+	text-align: right;
+}
+
+
+.header-description {
+	font-size: 13px;
+	font-weight: 400;
+	color: var(--color-dark-white);
+}
+
+.header-description-number {
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+
+.header-call-button {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 4px;
+	color: var(--color-green);
+	background-color: var(--color-white);
+	border: none;
+	border-radius: 10px;
+
+}
