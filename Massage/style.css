@@ -198,6 +198,12 @@ h3 {
 }
 
 
+h4 {
+	color: var(--color-green);
+	font-weight: 500;
+}
+
+
 /**
   Удаляем все анимации и переходы для людей,
   которые предпочитают их не использовать
@@ -391,12 +397,16 @@ svg * {
 
 
 .banner {
+	min-height: calc(100vh - var(--header-height));
+}
+
+
+.card-wide {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	justify-content: center;
 	column-gap: clamp(20px, 8.68vw, 125px);
-	min-height: calc(100vh - var(--header-height));
 }
 
 
@@ -455,6 +465,7 @@ svg * {
 
 
 .regalia {
+	position: relative;
 	background-color: var(--color-green);
 }
 
@@ -503,6 +514,50 @@ svg * {
 	max-width: 255px;
 }
 
+.aboutus {
+	justify-content: space-around;
+}
+
+.aboutus-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.aboutus-body {
+	padding-left: 30px;
+	max-width: 445px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	row-gap: 32px;
+}
+
+
+
+
+.aboutus-image {
+	margin-top: -30px;
+	order: 2;
+}
+
+.aboutus-header {
+	font-family: var(--font-family-accent);
+	font-size: clamp(15px, 1.25vw, 18px);
+	margin-bottom: -16px;
+}
+
+.aboutus-title {
+	font-size: clamp(18px, 3.33vw, 48px);
+}
+
+
+.aboutus-description {
+	font-size: clamp(15px, 1.25vw, 18px);
+}
+
+
+
+
 
 
 
@@ -536,6 +591,10 @@ svg * {
 
 
 @media (max-width:1024px) {
+	p {
+		--paragraphMarginBottom: 14px;
+	}
+
 	.header {
 		flex-wrap: wrap;
 		padding-top: 20px;
@@ -555,12 +614,17 @@ svg * {
 		height: 50px;
 	}
 
-	.banner-body {
-		row-gap: 12px;
+
+	.banner-body,
+	.aboutus-body {
+		row-gap: 8px;
 		padding-block: 0px;
 	}
 
-	.banner-button {
+
+
+	.banner-button,
+	.aboutus-button {
 		font-size: 15px;
 	}
 
@@ -571,6 +635,17 @@ svg * {
 
 	.regalia-list-item {
 		row-gap: 22px;
+	}
+
+
+
+	.aboutus-image {
+		margin-top: 0px;
+	}
+
+
+	.aboutus-header {
+		margin-bottom: 0;
 	}
 
 
@@ -596,21 +671,27 @@ svg * {
 		padding-inline: 15px;
 	}
 
-	.banner {
+	.banner,
+	.aboutus {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.banner-body {
-		column-gap: 10px;
-		padding-top: 30px;
+	.button-aletenative {
+		padding: 10px 24px;
 	}
 
-	.banner-image {
+	.banner-body,
+	.aboutus-body {
+		column-gap: 10px;
+		padding-top: 20px;
+	}
+
+	.banner-image,
+	.aboutus-image {
 		padding-top: 30px;
-		width: 50%;
-		height: auto;
+		width: 60%;
 	}
 
 	.banner-description:not(:last-child) {
@@ -630,12 +711,16 @@ svg * {
 		padding-block: 40px
 	}
 
+	.aboutus {
+		flex-direction: column-reverse;
+	}
+
 }
 
 
 
-@media (max-width: 460px){
-	.regalia-list{ 
+@media (max-width: 460px) {
+	.regalia-list {
 		grid-template-columns: 1fr;
 	}
 }
