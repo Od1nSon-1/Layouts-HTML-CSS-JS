@@ -638,6 +638,88 @@ svg * {
 }
 
 
+.reviews {
+	padding-block: clamp(20px, 6.9vw, 100px);
+	background-color: var(--color-gray);
+}
+
+.reviews-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.reviews-header {
+	max-width: 720px;
+	text-align: center;
+}
+
+.reviews-title {
+	margin-bottom: clamp(15px, 1.66vw, 24px);
+}
+
+.reviews-description {
+	margin-bottom: clamp(25px, 5.55vw, 80px);
+}
+
+.reviews-card {
+	display: flex;
+	flex-wrap: wrap;
+	gap: clamp(15px, 2.08vw, 30px);
+	justify-content: center;
+	align-items: start;
+}
+
+.reviews-card-item {
+	padding-block: clamp(25px, 2.77vw, 40px);
+	padding-inline: clamp(20px, 2.22vw, 32px);
+	display: flex;
+	flex-direction: column;
+	row-gap: clamp(20px, 2.22vw, 32px);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--color-white);
+	max-width: 540px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 16px;
+}
+
+
+.reviews-card-description {
+	color: var(--color-black);
+}
+
+
+.reviews-card-name {
+	margin-bottom: 4px;
+}
+
+.reviews-user p:not(:last-child) {
+	margin-bottom: 4px;
+}
+
+.reviews-user-name {
+	font-size: clamp(14px, 1.25vw, 18px);
+}
+
+.reviews-user-post {
+	font-size: 13px;
+	color: var(--color-light-dark);
+	font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
