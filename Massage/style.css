@@ -602,10 +602,6 @@ svg * {
 	height: auto;
 }
 
-
-
-
-
 .services-item-title {
 	min-width: 286px;
 	top: 82%;
@@ -614,6 +610,40 @@ svg * {
 	transform: translateX(-50%);
 	position: absolute;
 }
+
+.diploma {
+	padding-block: clamp(20px, 5vw, 72px)
+}
+
+.diploma-wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: clamp(25px, 4.44vw, 64px);
+	align-items: center;
+	justify-content: center;
+}
+
+
+.diploma-title {
+	font-size: clamp(20px, 3.33vw, 48px);
+	text-align: center;
+}
+
+.diploma-list {
+	display: flex;
+	column-gap: clamp(15px, 2.08vw, 30px);
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
 
 
 
