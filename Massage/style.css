@@ -258,6 +258,10 @@ svg * {
 	transition-duration: var(--transition-duration);
 }
 
+.is-brighter {
+	color: var(--color-white);
+}
+
 .container {
 	max-width: calc(var(--container-width) + var(--container-padding-x)*2);
 	margin-inline: auto;
@@ -812,6 +816,61 @@ svg * {
 	text-decoration: none;
 }
 
+.contacts {
+	background-color: var(--color-green);
+	column-gap: 0px;
+}
+
+
+
+.contacts-wrapper {
+	display: flex;
+	justify-content: center;
+	padding-left: 20px;
+}
+
+.contacts-body {
+	max-width: 300px;
+}
+
+.contacts-image {
+	background: url(./images/contacts/1.jpg) center/cover no-repeat;
+	width: 100%;
+	position: relative;
+	height: 400px;
+}
+
+
+.contacts-image::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	width: 24px;
+	aspect-ratio: 1;
+	background: url(./icons/pin.svg) center/cover no-repeat;
+}
+
+.contacts-title {
+	font-family: var(--font-family-accent);
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+
+.contacts-link {
+	color: var(--color-dark-white);
+	font-style: normal;
+	font-size: clamp(16px, 1.25vw, 18px);
+}
+
+
+
+
+
+
+
 
 
 
@@ -924,6 +983,14 @@ svg * {
 		margin-bottom: 0;
 	}
 
+	.contacts {
+		grid-template-columns: 1fr;
+	}
+
+	.contacts-wrapper {
+		padding-block: clamp(42px, 8.3vw, 115px);
+	}
+
 
 
 
@@ -991,6 +1058,10 @@ svg * {
 
 	.aboutus {
 		flex-direction: column-reverse;
+	}
+
+	.contacts-title {
+		margin-bottom: 8px;
 	}
 
 }
