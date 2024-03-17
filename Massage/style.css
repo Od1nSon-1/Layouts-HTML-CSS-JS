@@ -17,7 +17,7 @@
 @font-face {
 	font-family: "Stem";
 	src: url(./fonts/Stem-Regular.woff2) format('woff2');
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
@@ -710,6 +710,107 @@ svg * {
 	font-weight: 400;
 }
 
+
+.appointment {
+	padding: clamp(20px, 6.9vw, 100px) 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.appointment-wrapper {
+	max-width: 540px;
+	display: flex;
+	flex-direction: column;
+	row-gap: clamp(30px, 2.77vw, 40px)
+}
+
+.appointment-header {
+	text-align: center;
+}
+
+.appointment-title {
+	font-size: clamp(20px, 3.33vw, 48px);
+}
+
+.appointment-title:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+
+.appointment-description {
+	font-size: clamp(16px, 1.25vw, 18px);
+	color: var(--color-black-atlernate);
+}
+
+
+
+.appointment-input {
+	width: 100%;
+	height: clamp(45px, 3.88vw, 56px);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	padding-inline: 20px;
+}
+
+.appointment-input {
+	margin-bottom: 12px;
+}
+
+
+.appointment-input::placeholder {
+	font-weight: 400;
+	font-size: clamp(16px, 1.25vw, 18px);
+	color: rgba(0, 0, 0, 0.2);
+}
+
+
+.appointment-delivery {
+	padding-block: 16px;
+	margin-bottom: clamp(0px, 1.56vw, 24px);
+}
+
+
+.appointment-delivery-title {
+	color: var(--color-black);
+	margin-bottom: 8px;
+	font-size: clamp(16px, 1.25vw, 18px)
+}
+
+
+.appointment-delivery-item {
+	padding-block: 8px;
+	font-size: clamp(16px, 1.25vw, 18px)
+}
+
+
+.appointment-delivery-label {
+	color: var(--color-black-atlernate);
+	font-weight: 400;
+}
+
+
+.appointment-button {
+	width: 100%;
+	font-size: clamp(16px, 1.25vw, 18px);
+	border-radius: 7px;
+	font-weight: 500;
+	font-family: var(--font-family-base);
+	margin-bottom: 24px;
+}
+
+
+.appointment-approval {
+	font-weight: 700;
+	font-size: 13px;
+	text-align: center;
+	color: var(--color-light-dark)
+}
+
+
+.appointment-approval a {
+	color: var(--color-green);
+	text-decoration: none;
+}
 
 
 
