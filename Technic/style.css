@@ -687,6 +687,67 @@ h6 {
 }
 
 
+.team-wrapper {
+	padding-block: clamp(40px, 8.33vw, 120px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: clamp(20px, 4.44vw, 64px);
+}
+
+.team-header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	row-gap: clamp(10px, 1.66vw, 24px);
+}
+
+.team-clogan {
+	font-size: clamp(18px, 1.94vw, 28px);
+	color: var(--color-yellow);
+}
+
+.team-description {
+	color: var(--color-light-blue);
+}
+
+
+.team-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: clamp(20px, 3.12vw, 45px);
+}
+
+.team-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.team-image {
+	margin-bottom: clamp(15px, 1.66vw, 24px);
+}
+
+.team-name {
+	font-size: clamp(18px, 1.66vw, 24px);
+	margin-bottom: 8px;
+}
+
+.team-item-subtitle {
+	font-weight: 700;
+	font-size: clamp(15px, 1.25vw, 18px);
+	color: var(--color-light-blue);
+
+}
+
+
+
+
+
+
 
 
 
@@ -727,6 +788,12 @@ h6 {
 	.header {
 		column-gap: 30px;
 	}
+
+	.team-image {
+		width: 240px;
+		height: 240px;
+
+	}
 }
 
 
@@ -747,6 +814,13 @@ h6 {
 		grid-template-columns: repeat(2, 0.8fr);
 		column-gap: 20px;
 		row-gap: 30px;
+	}
+
+
+	.team-image {
+		width: 180px;
+		height: 180px;
+
 	}
 }
 
@@ -835,5 +909,11 @@ h6 {
 
 	.order-input-number::placeholder {
 		font-size: 15px;
+	}
+
+	.team-image {
+		width: 145px;
+		height: 145px;
+
 	}
 }
