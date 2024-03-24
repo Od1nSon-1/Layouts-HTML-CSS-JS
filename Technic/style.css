@@ -323,7 +323,7 @@ h6 {
 }
 
 .button-slider {
-	width: 64px;
+	min-width: clamp(55px, 4.44vw, 64px);
 	aspect-ratio: 1;
 	background-color: var(--color-white);
 	border: none;
@@ -338,6 +338,7 @@ h6 {
 .is-blue {
 	color: #1a236e
 }
+
 
 
 
@@ -513,11 +514,11 @@ h6 {
 
 
 .reviews {
-	padding: 100px 80px;
+	padding: clamp(40px, 6.94vw, 100px) clamp(20px, 5.55vw, 80px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	column-gap: 211px;
+	column-gap: clamp(20px, 14.65vw, 211px);
 }
 
 .reviews-button-left {
@@ -552,29 +553,65 @@ h6 {
 }
 
 .reviews-text {
-	font-size: 24px;
+	font-size: clamp(18px, 1.66vw, 24px);
 	font-weight: 700;
 }
 
 
 .reviews-name,
-reviews-post {
+.reviews-post {
 	display: block;
 }
 
 .reviews-name {
 	font-weight: 600;
+
 }
 
 .reviews-post {
 	font-size: 13px;
 	color: var(--color-light-blue-opacity);
+	margin-bottom: clamp(8px, 2.22vw, 32px);
 }
 
 .reviews-button-right {
 	position: relative;
 	rotate: 180deg;
 }
+
+
+.reviews-pagination-list {
+	display: flex;
+	justify-content: center;
+}
+
+
+.reviews-pagination-item {
+	display: flex;
+}
+
+
+.reviews-pagination-button {
+	display: inline-flex;
+	border: none;
+	padding: 8px;
+	background-color: transparent;
+}
+
+.reviews-pagination-button::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.1);
+	;
+	width: 24px;
+	height: 4px;
+	border-radius: 2px;
+}
+
+.reviews-pagination-button.is-current::after {
+	background: var(--color-yellow);
+}
+
+
 
 
 
@@ -678,7 +715,6 @@ reviews-post {
 		order: 3;
 	}
 
-
 	.banner-button-application {
 		margin-right: 8px;
 	}
@@ -698,5 +734,14 @@ reviews-post {
 
 	.trust-us-item-image::after {
 		width: 28px;
+	}
+
+	.reviews-body {
+		row-gap: 15px;
+	}
+
+	.reviews-button-left,
+	.reviews-button-right {
+		display: none;
 	}
 }
