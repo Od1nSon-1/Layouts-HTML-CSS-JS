@@ -743,6 +743,71 @@ h6 {
 
 }
 
+.servises {
+	padding-block: clamp(40px, 8.33vw, 120px);
+	background-color: var(--color-dark-blue-bg);
+}
+
+
+.servises-wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: clamp(20px, 4.44vw, 64px);
+}
+
+.servises-header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	row-gap: clamp(18px, 1.66vw, 24px);
+	;
+}
+
+.servises-list {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.servises-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--color-white);
+	padding: 32px 25px;
+	width: 360px;
+	text-align: center;
+	border-radius: var(--border-radius);
+}
+
+.servises-item-title {
+	margin-bottom: clamp(18px, 1.66vw, 24px);
+}
+
+.servises-item-subtitle {
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.servises-item-description {
+	font-size: 15px;
+	font-weight: 400;
+	color: var(--color-light-blue);
+	margin-bottom: clamp(30px, 6.38vw, 92px);
+}
+
+
+.servises-item-button {
+	justify-content: center;
+	font-size: 15px;
+	height: var(--button-medium);
+	width: 100%;
+}
+
+
+
+
+
 
 
 
@@ -859,6 +924,16 @@ h6 {
 
 	.banner-button-application {
 		margin-bottom: 15px;
+	}
+
+
+	.servises-list {
+		flex-wrap: wrap;
+		gap: 18px;
+	}
+
+	.servises-item {
+		padding: 25px 15px
 	}
 
 
