@@ -877,10 +877,13 @@ h6 {
 
 
 .contract {
+	background: url(./image/contract/bg.jpg) center/cover no-repeat;
 	padding: clamp(40px, 6.94vw, 100px);
 	display: flex;
 	flex-direction: column;
-	row-gap: clamp(20px, 2.77vw, 40px);
+	align-items: center;
+
+	row-gap: clamp(15px, 2.77vw, 40px);
 }
 
 .contract-header,
@@ -893,12 +896,81 @@ h6 {
 }
 
 .contract-title {
-	margin: bottom 16px;
+	margin-bottom: clamp(12px, 1.11vw, 16px);
+	line-height: 1.08;
 }
 
 .contract-subtitle {
 	color: var(--color-opacity-white);
 }
+
+.contract-form {
+	margin-bottom: clamp(15px, 1.67vw, 24px);
+}
+
+
+.contract-form-input-written {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+
+.contract-form-input-radio {
+	margin-bottom: clamp(22px, 2.22vw, 32px);
+}
+
+.contract-form-input-radio > .contract-form-card:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.contract-form-input-radio > :first-child {
+	margin-bottom: 12px;
+}
+
+.contract-form-card {
+	display: flex;
+	flex-direction: row-reverse;
+	column-gap: 16px;
+	align-items: center;
+	justify-content: start;
+}
+
+.contract-form-label {
+	font-weight: 700;
+}
+
+.contract-form-card-input {
+	background-color: transparent;
+	width: 25px;
+	aspect-ratio: 1;
+	margin: 0;
+}
+
+
+.contract-form-button {
+	width: 100%;
+	justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

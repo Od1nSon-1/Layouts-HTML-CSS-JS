@@ -294,28 +294,40 @@
 			</div>
 			<div class="contract-body">
 				<form class="contract-form">
-					<label class="visually-hidden" for="youname"></label>
-					<input type="text" class="contract-form-input input" id="youname">
+					<div class="contract-form-input-written">
+						<label class="visually-hidden" for="youname"></label>
+						<input type="text" class="contract-form-input input" id="youname" placeholder="Ваше имя">
 
-					<label class="visually-hidden" for="younumber"></label>
-					<input type="number" class="contract-form-input input" id="younumber">
+						<label class="visually-hidden" for="younumber"></label>
+						<input type="number" class="contract-form-input input" id="younumber" placeholder="+7 (000) 000-0000">
 
-					<label class="visually-hidden" for="youemail"></label>
-					<input type="email" class="contract-form-input input" id="youemail">
-					<p class="contract-form-description">Какой полис вас интересует</p>
+						<label class="visually-hidden" for="youemail"></label>
+						<input type="email" class="contract-form-input input" id="youemail" placeholder="E-mail">
+					</div>
+					<div class="contract-form-input-radio">
+						<p class="contract-form-description">Какой полис вас интересует</p>
 
-					<label for="kacko" class="contract-form-label">КАСКО</label>
-					<input type="radio" class="contract-form-input" id="kacko">
+						<div class="contract-form-card">
+							<label for="kacko" class="contract-form-label">КАСКО</label>
+							<input type="radio" class="contract-form-card-input" id="kacko">
+						</div>
 
-					<label for="ocago" class="contract-form-label">ОСАГО</label>
-					<input type="radio" class="contract-form-input" id="ocago">
+						<div class="contract-form-card">
+							<label for="ocago" class="contract-form-label">ОСАГО</label>
+							<input type="radio" class="contract-form-card-input" id="ocago">
+						</div>
 
-					<label for="life" class="contract-form-label">Страхование жизни</label>
-					<input type="radio" class="contract-form-input" id="life">
+						<div class="contract-form-card">
+							<label for="life" class="contract-form-label">Страхование жизни</label>
+							<input type="radio" class="contract-form-card-input " id="life">
+						</div>
+					</div>
 					<button class="contract-form-button button button-yellow">Заказать полис</button>
 				</form>
-				<div class="contract-description approval-text">Оставляя заявку, вы соглашаетесь на обработку персональных
-					данных и с условиями бронирования счёта</div>
+				<div class="contract-description approval-text">
+					<p><span>Оставляя заявку, вы соглашаетесь на</span> обработку персональных данных <span>и с</span> условиями
+						бронирования счёта</p>
+				</div>
 			</div>
 		</section>
 	</main>
