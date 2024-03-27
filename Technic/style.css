@@ -384,7 +384,11 @@ h6 {
 
 .header {
 	display: flex;
+	position: sticky;
 	align-items: center;
+	z-index: 1000;
+	top: 0;
+	background-color: #fff;
 	justify-content: space-between;
 	column-gap: 20px;
 	min-height: var(--header-height);
@@ -883,6 +887,59 @@ h6 {
 }
 
 
+.project {
+	padding-block: clamp(30px, 5.55vw, 80px)
+}
+
+
+.project-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	gap: clamp(18px, 2.08vw, 30px);
+}
+
+
+
+.project-card {
+	display: inline-block;
+	position: relative;
+}
+
+.project-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 4.2%;
+	background-color: rgba(0, 0, 0, 0);
+	/* Начальное значение прозрачности */
+	transition: all 0.2s ease;
+}
+
+
+
+.project-card:hover::before {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+	width: 100%;
+}
+
+
+.project-card:first-child {
+	grid-row: span 2;
+}
+
+
+
+
+
+
+
 
 .contract {
 	background: url(./image/contract/bg.jpg) center/cover no-repeat;
@@ -1173,6 +1230,12 @@ h6 {
 		grid-template-columns: repeat(3, 1fr);
 		row-gap: 20px;
 	}
+
+
+	.project-image {
+		max-width: 540px;
+		height: auto;
+	}
 }
 
 
@@ -1276,6 +1339,20 @@ h6 {
 
 	.contacts-wrapper {
 		grid-template-columns: 1fr;
+	}
+
+	.project-wrapper {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.project-card {
+		display: flex;
+		justify-content: center;
+	}
+
+	.project-image {
+		width: 85%;
+		height: auto;
 	}
 
 }
